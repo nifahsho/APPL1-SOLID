@@ -15,4 +15,14 @@ Tujuan dari latihan ini, yaitu DetailPrinter tidak perlu mengecek employee yang 
 Untuk mencapai tujuan tersebut, sama seperti sebelumnya yaitu dengan menerapkan **Open/Closed Principle**
 
 ## 5. Security Door 
+Diberikan suatu kelas:
 
+- SecurityManager
+- abstract kelas SecurityCheck
+- interface SecurityUI
+
+SecurityManager dapat berinteraksi dengan user dengan memvalidasi keycard atau dengan kode pin. Kedua method tersebut terdapat pada interface SecurityUI. Validasi dilakukan oleh kelas SecurityCheck.
+
+Pada latihan ini diterapkan **Interface Segregation Principle** dimana terdapat beberapa interface dengan tujuan spesifik daripada satu interface tetapi memiliki banyak tujuan. Hal ini terlihat dari pembuatan ISecurity yang dipecah menjadi dua interface yang berbeda (IRequestKeyCard dan IRequestPinCode) sehingga inheritance terhadap ISecurity.  
+
+prinsip **Open/Closed Principle** diterapkan pada kelas ScannerUI yang implements terhadap ISecurity. Selain itu diterapkan  **Dependency Inversion Principle** dimana Bergantung pada Abstraksi. hal ini terlihat pada kelas yang inheretance pada kelas abstract SecurityCheck.
