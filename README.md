@@ -1,5 +1,5 @@
 # APPL1-SOLID
-Hanifah Sholihat 181524012
+Latihan Prisnsip SOLID oleh Hanifah Sholihat 181524012
 
 ## 1. Stream Progress
 ## 2. Graphic Editor
